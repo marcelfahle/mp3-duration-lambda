@@ -2,7 +2,6 @@ var fs = require('fs');
 var request = require('request');
 var mp3Duration = require('mp3-duration');
 
-// get mp3 duration from S3.
  
 exports.handler = (event, context, callback) => {
   request
