@@ -9,14 +9,14 @@ exports.handler = (event, context, callback) => {
     .on('error', (err) => {
       throw (err);
     })
-    .pipe(fs.createWriteStream('audio.mp3'))
+    .pipe(fs.createWriteStream('/tmp/audio.mp3'))
     .on('error', (err) => {
       throw (err);
     })
     .on('finish', () => {
-      mp3Duration('audio.mp3', (err, duration) => {
+      mp3Duration('/tmp/audio.mp3', (err, duration) => {
         if (err) throw (err);
-        fs.unlink('audio.mp3');
+        fs.unlink('/tmp/audio.mp3'); // not really necessary, but whatever
         callback(null, {duration});
       });
     });
