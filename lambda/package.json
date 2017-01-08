@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "mp3-duration": "^1.0.10"
+    "mp3-duration": "^1.0.10",
+    "request": "^2.79.0"
   }
 }
