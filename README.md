@@ -5,7 +5,7 @@ Simple Lambda function that pulls a remote MP3 file, returns its duration and re
 
 ## TODO
 
-- [] Add Arrays of MP3 files, that returns totalDuration
-- [] Optimize a bit, node_modules is 10M+. I don't think we need all this shit
+- [ ] Add Arrays of MP3 files, that returns totalDuration
+- [ ] Optimize a bit, node_modules is 10M+. I don't think we need all this shit
   for simple operation
-- [] Set filesize limit
+- [ ] Set filesize limit
